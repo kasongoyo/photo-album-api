@@ -1,0 +1,63 @@
+{
+  "name": "photo-book",
+  "version": "1.0.0",
+  "description": "Photo album",
+  "main": "server.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha test/bootstrap_spec.js test/**/*_spec.js --reporter spec",
+    "dev": "NODE_ENV=development nodemon server.js",
+    "predev": "eslint --ext .js .",
+    "pretest": "eslint --ext .js .",
+    "start": "node server.js",
+    "lint": "eslint --ext .js .",
+    "lint:fix": "eslint --fix --ext .js ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/kasongoyo/photo-album.git"
+  },
+  "keywords": [
+    "photo",
+    "album"
+  ],
+  "author": "kasongoyo@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kasongoyo/photo-album/issues"
+  },
+  "engines": {
+    "node": ">=10.13.0"
+  },
+  "private": true,
+  "homepage": "https://github.com/kasongoyo/photo-album#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "express-winston": "^3.1.0",
+    "helmet": "^3.15.1",
+    "method-override": "^3.0.0",
+    "mkdir-p": "0.0.7",
+    "mongoose": "^5.4.15",
+    "mongoose-autopopulate": "^0.9.1",
+    "mongoose-hidden": "^1.6.1",
+    "mongoose-paginate": "^5.0.3",
+    "require-all": "^3.0.0",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^5.14.1",
+    "eslint-plugin-mocha": "^5.3.0",
+    "eslint-plugin-node": "^8.0.1",
+    "faker": "^4.1.0",
+    "mocha": "^6.0.2",
+    "nodemon": "^1.18.10",
+    "superagent-defaults": "^0.1.14",
+    "supertest": "^3.4.2"
+  },
+  "files": [
+    "**/*_spec.js"
+  ]
+}
