@@ -36,6 +36,7 @@ const mongoOptions = {
   useCreateIndex: true
 }
 
+console.log(DB_NAME);
 
 /**
  * @description plugin schema wide mongoose plugins 

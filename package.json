@@ -8,7 +8,7 @@
     "dev": "NODE_ENV=development nodemon server.js",
     "predev": "eslint --ext .js .",
     "pretest": "eslint --ext .js .",
-    "start": "node server.js",
+    "start": "NODE_ENV=production node server.js",
     "lint": "eslint --ext .js .",
     "lint:fix": "eslint --fix --ext .js ."
   },
