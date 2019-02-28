@@ -20,5 +20,9 @@ to
 ## Notes
 This project will by default run on port 8181. 
 
-My test coverage is small and I believe it will serve the purpose of evaluating my skills. I could write more test but I am afraid it will take more time.
+## Environmental variables
+This project by default will run with default configuration for mongoose and
+winston logger and other. You can customize these configurations by adding
+`env.{NODE_ENV}` file in the project root. Please see `.env.example` for the 
+possible variable available
 
