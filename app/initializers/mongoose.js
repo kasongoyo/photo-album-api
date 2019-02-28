@@ -22,7 +22,7 @@ const DB_HOST = process.env.DB_HOST || '127.0.0.1';
 const DB_PORT = process.env.DB_PORT || '27017';
 const DB_USER = process.env.DB_USER;
 const DB_PASSWORD = process.env.DB_PASSWORD;
-const DB_NAME = process.env.DB_NAME;
+const DB_NAME = process.env.DB_NAME || 'photo-book';
 const login = DB_USER && DB_USER.length ? `${DB_USER}:${DB_PASSWORD}@` : '';
 const uristring = `mongodb://${login}${DB_HOST}:${DB_PORT}/${DB_NAME}`;
 
